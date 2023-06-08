@@ -1,0 +1,44 @@
+{
+  "name": "addintech-backend",
+  "version": "1.0.0",
+  "description": "API para desarrollo de prueba tecnica",
+  "main": "index.ts",
+  "author": "Andres Parra",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.3.1",
+    "npm": ">=8.1.2"
+  },
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "dev": "ts-node-dev ./src/index.ts",
+    "build": "yarn && tsc -p ."
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.8.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "uuid": "^9.0.0",
+    "zod": "^3.15.1"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/jsonwebtoken": "^8.5.9",
+    "@types/morgan": "^1.9.3",
+    "@types/multer": "^1.4.7",
+    "@types/node": "^18.11.17",
+    "@types/uuid": "^9.0.0",
+    "npm-check-updates": "^12.5.11",
+    "prettier": "^2.6.2",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.4"
+  }
+}
