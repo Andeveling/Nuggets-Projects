@@ -1,56 +1,56 @@
 # Ecommerce App
 
-Esta es una aplicación de Ecommerce que muestra una lista de productos obtenidos desde un endpoint API. Permite filtrar los productos por categoría y precio. Utiliza el contexto de React (`useContext`) para evitar pasar props innecesarias.
+This is an Ecommerce application that displays a list of products obtained from an API endpoint. It allows filtering products by category and price. It uses React context (`useContext`) to avoid unnecessary prop passing.
 
-## Funcionalidades
+## Features
 
-### Lista de Productos
+### Product List
 
-- Muestra una lista de productos obtenidos desde el endpoint API.
-- Cada producto se muestra con su nombre, descripción, categoría, precio y una opción para agregarlo al carrito.
-- Permite filtrar los productos por categoría y precio.
+- Displays a list of products obtained from the API endpoint.
+- Each product is shown with its name, description, category, price, and an option to add it to the cart.
+- Allows filtering products by category and price.
 
-### Carrito de Compras
+### Shopping Cart
 
-- Permite añadir productos al carrito.
-- Permite eliminar productos del carrito.
-- Permite modificar la cantidad de productos en el carrito.
-- Sincroniza automáticamente los cambios del carrito con la lista de productos.
-- Utiliza el almacenamiento local (localStorage) para guardar el carrito y recuperarlo al recargar la página.
+- Allows adding products to the cart.
+- Allows removing products from the cart.
+- Allows modifying the quantity of products in the cart.
+- Automatically synchronizes cart changes with the product list.
+- Uses local storage (localStorage) to save the cart and retrieve it upon page reload.
 
-## Instalación
+## Installation
 
-1. Clona este repositorio en tu máquina local.
-2. Navega hasta el directorio del proyecto.
-3. Ejecuta `yarn install` para instalar las dependencias.
+1. Clone this repository to your local machine.
+2. Navigate to the project directory.
+3. Run `yarn install` to install the dependencies.
 
-## Uso
+## Usage
 
-1. Ejecuta `yarn start` para iniciar la aplicación.
-2. Abre tu navegador y visita `http://localhost:3000` para ver la aplicación en funcionamiento.
-3. Explora la lista de productos y utiliza los filtros para encontrar los productos deseados.
-4. Agrega productos al carrito haciendo clic en la opción correspondiente en cada producto.
-5. Ve al carrito para ver los productos agregados, modificar las cantidades o eliminar productos.
-6. Los cambios en el carrito se guardarán automáticamente y se sincronizarán con la lista de productos.
+1. Run `yarn start` to start the application.
+2. Open your browser and visit `http://localhost:3000` to see the application in action.
+3. Explore the product list and use the filters to find desired products.
+4. Add products to the cart by clicking on the corresponding option on each product.
+5. Go to the cart to view the added products, modify quantities, or remove products.
+6. Cart changes will be saved automatically and synchronized with the product list.
 
-## Contribución
+## Contribution
 
-Las contribuciones son bienvenidas. Si deseas contribuir a este proyecto, sigue estos pasos:
+Contributions are welcome. If you wish to contribute to this project, follow these steps:
 
-1. Realiza un fork del repositorio.
-2. Crea una nueva rama (`git checkout -b feature/nueva-caracteristica`).
-3. Realiza tus cambios y realiza commits (`git commit -am 'Agrega una nueva característica'`).
-4. Envía tus cambios al repositorio remoto (`git push origin feature/nueva-caracteristica`).
-5. Abre una solicitud de extracción en GitHub.
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/new-feature`).
+3. Make your changes and commit them (`git commit -am 'Add a new feature'`).
+4. Push your changes to the remote repository (`git push origin feature/new-feature`).
+5. Open a pull request on GitHub.
 
-## Autor
+## Author
 
-- [Nombre del autor](https://github.com/nombre-de-usuario): Breve descripción sobre el autor.
+- [Author's Name](https://github.com/andeveling): Brief description of the author.
 
-## Licencia
+## License
 
-Este proyecto está bajo la licencia [Nombre de la licencia](https://url-de-la-licencia).
+This project is licensed under the [License Name](https://license-url).
 
 ---
 
-¡Gracias por utilizar nuestra aplicación de Ecommerce! Si tienes alguna pregunta o problema, no dudes en contactarnos. Esperamos que disfrutes de la experiencia de compra.
+Thank you for using our Ecommerce application! If you have any questions or issues, feel free to contact us. We hope you enjoy the shopping experience.

@@ -1,7 +1,6 @@
-
 # CRUD Fullstack MERN stack - frontend
 
-Aplicación que muestra una lista de productos traídos de una base de datos mediante una API rest para presentar productos ofrecidos a modo de catálogo. Esta aplicación usa librerías como ReactJS, NextUI y ReduxToolkit. También cuenta con un panel CRUD para gestionar los productos que se ofrecen.
+Application that displays a list of products fetched from a database through a REST API to showcase cataloged products. This application uses libraries such as ReactJS, NextUI, and ReduxToolkit. It also includes a CRUD panel to manage the offered products.
 
 
 ## 📷 Screenshots
@@ -9,10 +8,10 @@ Aplicación que muestra una lista de productos traídos de una base de datos med
 ![App Screenshot](https://res.cloudinary.com/dg84upfsp/image/upload/v1671401089/addintech/Screenshot_2_szg8ud.jpg)
 
 
-## 📝 Características
+## 📝 Features
 
 - Responsive design
-- Panel Admin CRUD
+- CRUD Admin panel
 - Register/Login
 
 
@@ -22,11 +21,11 @@ Aplicación que muestra una lista de productos traídos de una base de datos med
 
 **⚙️ Backend:**  NodeJs, ExpressJs, Typescript, MongoDB
 
-## ⚙️ Para empezar
+## ⚙️ Getting Started
 
-### Dependencias
+### Dependencies
 
-* React Js / React-Dom : 18.2.0
+* React Js / React-Dom: 18.2.0
 * NextUI 1.0.0-beta.10
 * React Redux 8.0.5
 * Redux Toolkit 1.9.1
@@ -34,13 +33,13 @@ Aplicación que muestra una lista de productos traídos de una base de datos med
 
 
 
-### ¿Como Instalar?
+### Installation Steps
 
  
 
- 1. Clonar Repositorio
- 2.  Instalar dependencias
- 3.  Iniciar Servidor de desarrollo
+ 1. Clone the repository
+ 2. Install dependencies
+ 3. Start the development server
 	 
 
 ```
@@ -48,17 +47,15 @@ git clone https://github.com/Andeveling/addintech-front.git
 yarn
 yarn dev
 ```
-Nota: Este repositorio contiene el cliente de la aplicación, es necesario instalar el backend y db previamente, siga los pasos en el readme del siguiente repositorio.
-**Guía Backend:** https://github.com/Andeveling/addintech-backend
+Note: This repository contains the client-side of the application. It is necessary to install the backend and the database beforehand. Follow the steps in the readme of the following repository.
+**Backend Guide:** https://github.com/Andeveling/addintech-backend
 
 
-## 🚀 Autores
+## 🚀 Authors
 
 - [@andeveling](https://www.github.com/andeveling)
 
 
 ## 💌 Feedback
 
-Si deseas aportar tus ideas, puedes escribirme a  andeveling@gmail.com
-
-
+If you would like to provide feedback or share your ideas, you can email me at andeveling@gmail.com
