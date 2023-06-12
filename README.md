@@ -27,7 +27,18 @@ The projects in this repository primarily use the following technologies and fra
 - Next.js: A framework for server-rendered React applications. 🚀
 - Node.js: Is an open-source, cross-platform JavaScript runtime environment.
 - Express.js: Fast, unopinionated, minimalist web framework for Node.js
-- Other relevant technologies: List any other technologies or libraries used across the projects.
+- Html, CSS  and JS
+- Typescript
+- Redux Toolkit
+- SWR
+- Strapi CMS
+- Sequalize
+- Mongoose
+- Prisma
+- Axios
+- React Hook Form
+- Formik
+- Yup and Zod
 
 ## Contributing 🤝
 
