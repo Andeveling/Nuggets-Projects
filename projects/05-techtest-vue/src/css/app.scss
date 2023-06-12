@@ -1,0 +1,13 @@
+// app global css in SCSS form
+a,
+a:active,
+a:visited,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
