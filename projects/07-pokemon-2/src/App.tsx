@@ -1,16 +1,14 @@
-import { usePokemons } from "./context/PokemonContext"
+import { Header } from "@/components"
+import { Pokemons } from "@/components"
+import { usePokemons } from "@/context/PokemonContext"
 
 function App() {
-  const { pokemons } = usePokemons()
+  const { totalPokemons } = usePokemons()
   return (
-    <div className='container'>
-      <h1 className="text-3xl">Pokemons</h1>
-      <ul>
-        {pokemons.map((pokemon:any) => (
-          <li key={pokemon.id}>{pokemon.name}</li>
-        ))}
-      </ul>
-    </div>
+    <>
+      <Header pokemons={totalPokemons} />
+      <Pokemons />
+    </>
   )
 }
 
