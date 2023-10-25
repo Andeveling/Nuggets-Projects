@@ -4,12 +4,6 @@ import { SortableContext, verticalListSortingStrategy, arrayMove } from "@dnd-ki
 import { Contact } from "@/components/Contact"
 import { ContactI } from "./interfaces/Contact.interface"
 
-interface Task {
-  id: string
-  title: string
-  completed: boolean
-}
-
 export default function App() {
   const [contacts, setContacts] = useState<ContactI[]>([
     {
