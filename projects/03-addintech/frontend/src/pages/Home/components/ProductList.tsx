@@ -23,8 +23,8 @@ const ProductList = () => {
     })
   if (error)
     content = (
-      <Grid>
-        <Text>{JSON.stringify(error)}</Text>
+      <Grid justify="center" css={{ height: 'stretch' }}>
+        <Text color="error">An error occurred!</Text>
       </Grid>
     )
   return (
