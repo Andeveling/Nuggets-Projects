@@ -1,0 +1,23 @@
+.input_container {
+    height: 34px;
+    border: none;
+    width: 120px;
+    border-radius: 18px 0 0 0px;
+    padding-left: 10px;
+    color: gray;
+}
+
+.input_container:focus {
+    outline: none;
+    color: gray;
+}
+
+
+.input_button {
+    height: 34px;
+    width: 40px;
+    border: none;
+    border-radius: 0 0 18px 0;
+    background-color: var(--cards-background-color);
+    color: white;
+}

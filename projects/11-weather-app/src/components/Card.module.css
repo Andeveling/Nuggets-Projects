@@ -1,0 +1,58 @@
+@import url(../App.css);
+
+.CardContainer {
+    width: 280px;
+    height: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--cards-background-color);
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 1000;
+    font-weight: 300;
+}
+
+.CardContainer:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, var(--button-color) 0px 0px 0px 2px;
+}
+
+.title {
+    grid-column: 1/4;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    align-self: flex-start;
+    font-weight: 200;
+}
+
+.button {
+    justify-self: end;
+    cursor: pointer;
+    align-self: flex-start;
+    z-index: 3;
+}
+
+.button>button {
+    width: 30px;
+    height: 30px;
+    color: white;
+    font-weight: bold;
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 4px;
+}
+
+.img {
+    align-self: flex-start;
+    justify-self: flex-start;
+
+}
+
+.p1 {
+    font-weight: 400;
+    font-size: 3rem;
+}

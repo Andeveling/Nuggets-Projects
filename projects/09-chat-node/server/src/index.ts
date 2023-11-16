@@ -6,12 +6,21 @@ import { createServer } from "node:http"
 const port = process.env.PORT ?? 3000
 const app = express()
 const server = createServer(app)
-const serverIo = new Server(server)
+const serverIo = new Server(server, {
+  cors: {
+    origin: "*",
+  },
+  connectionStateRecovery: { maxDisconnectionDuration: 10000 },
+})
 
 serverIo.on("connection", (socket) => {
   console.log("a user connected")
   socket.on("disconnect", () => {
     console.log("a user disconnected")
+  })
+
+  socket.on("chat message", (msg) => {
+    serverIo.emit("chat message", msg)
   })
 })
 
