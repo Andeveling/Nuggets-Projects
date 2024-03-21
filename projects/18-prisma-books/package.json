@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate:autor-table": "ts-node ./prisma/migrations/20240321151855_correct_realation_autor_libro/data-migration.ts",
+    "migrate:error": "ts-node ./prisma/migrations/20240321154450_fix_error/data-migration.ts"
   },
   "prisma": {
     "seed": "ts-node prisma/seed.ts"
