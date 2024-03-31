@@ -14,7 +14,6 @@ model Libro {
   id_libro            Int        @id @default(autoincrement())
   ISBN                String     @unique
   titulo              String
-  autor               String
   cantidad_disponible Int
   prestamos           Prestamo[]
   autor_id            Int
@@ -37,7 +36,7 @@ model Prestamo {
   libro_id          Int
   socio_id          Int?
   libro             Libro    @relation(fields: [libro_id], references: [id_libro])
-  Socio             Socio?   @relation(fields: [socio_id], references: [id_socio])
+  socio             Socio?   @relation(fields: [socio_id], references: [id_socio])
 }
 
 model Autor {

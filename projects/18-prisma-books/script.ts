@@ -6,16 +6,9 @@ async function main() {
   try {
     // const todosLosLibros = await prisma.libro.findMany()
 
-    const librosOrdenadosAZ = await prisma.libro.findMany({
-      orderBy: {
-        titulo: "asc",
-      },
-      include: {
-        autor_libro: true,
-      },
-    })
+    const autores = await prisma.autor.findMany({ include: { libros: true } })
 
-    console.log("Libros ordenados A-Z ", librosOrdenadosAZ)
+    console.log("Autores ", autores)
 
     console.log("Base de datos abierta")
   } catch (e) {

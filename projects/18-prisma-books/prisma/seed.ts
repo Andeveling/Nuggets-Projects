@@ -2,35 +2,6 @@ import { PrismaClient } from "@prisma/client"
 
 const prisma = new PrismaClient()
 
-/* 
-model Libro {
-  id_libro            Int        @id @default(autoincrement())
-  ISBN                String     @unique
-  titulo              String
-  autor               String
-  cantidad_disponible Int
-  prestamos           Prestamo[]
-}
-
-model Socio {
-  id_socio  Int        @id @default(autoincrement())
-  nombre    String
-  direccion String
-  telefono  String
-  correo    String
-  prestamos Prestamo[]
-}
-
-model Prestamo {
-  id_prestamo       Int      @id @default(autoincrement())
-  fecha_prestamo    DateTime
-  fecha_vencimiento DateTime
-  libro_id          Int
-  socio_id          Int?
-  libro             Libro    @relation(fields: [libro_id], references: [id_libro])
-  Socio             Socio?   @relation(fields: [socio_id], references: [id_socio])
-}
-*/
 
 async function main() {
   try {
