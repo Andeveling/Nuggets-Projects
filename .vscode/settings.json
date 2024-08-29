@@ -1,0 +1,88 @@
+{
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.insertSpaces": true,
+  "terminal.integrated.fontFamily": "MesloLGM NF",
+  "explorer.compactFolders": false,
+  "workbench.iconTheme": "material-icon-theme",
+  // "material-icon-theme.activeIconPack": "qwik",
+  "workbench.startupEditor": "none",
+  "workbench.colorCustomizations": {
+    "debugToolBar.background": "#121016"
+  },
+  "[dart]": {
+    "editor.formatOnSave": false,
+    "editor.formatOnType": false,
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  },
+  "explorer.confirmDelete": false,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "explorer.confirmDragAndDrop": false,
+  "extensions.autoUpdate": false,
+  "git.enableSmartCommit": true,
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "workbench.layoutControl.enabled": false,
+  "window.commandCenter": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "git.openRepositoryInParentFolders": "never",
+  "git.confirmSync": false,
+  "codesnap.backgroundColor": "rgba(0, 0, 0, 0.0)",
+  "editor.minimap.enabled": false,
+  "window.titleBarStyle": "custom",
+  "codesnap.boxShadow": "rgba(0, 0, 0, 0.55) 0px 0px 20px",
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "editor.accessibilitySupport": "off",
+  "workbench.colorTheme": "Tokyo Night Storm",
+  "liveServer.settings.donotVerifyTags": true,
+  "git.autofetch": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorWidth": 2,
+  "reactSnippets.settings.importReactOnTop": false,
+  "window.zoomLevel": 4,
+  "codesnap.shutterAction": "copy",
+  "codesnap.showWindowControls": false,
+  "dart.flutterSdkPath": "/Users/strider/Development/flutter",
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+  "typescript.format.semicolons": "insert",
+  "typescript.preferences.quoteStyle": "single",
+  "javascript.format.semicolons": "insert",
+  "javascript.preferences.quoteStyle": "single",
+  "javascript.preferences.jsxAttributeCompletionStyle": "none",
+  "javascript.preferences.useAliasesForRenames": false,
+  "typescript.preferences.jsxAttributeCompletionStyle": "none",
+  "typescript.preferences.useAliasesForRenames": false,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false
+  },
+  "dart.showInspectorNotificationsForWidgetErrors": false,
+  "editor.guides.bracketPairs": "active",
+  "editor.guides.bracketPairsHorizontal": true,
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "accessibility.signals.diffLineDeleted": {
+    "sound": "off"
+  },
+  "workbench.activityBar.location": "hidden"
+}
