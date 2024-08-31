@@ -86,9 +86,11 @@ const ShallowBears = () => {
   return (
     <WhiteCard centered>
       <h2>Nothing</h2>
-      <button onClick={() => doNoting()}> Nothing</button>
-      <button onClick={() => addBear({ name: "Bear", color: "black" })}> Add Bear</button>
-      <button onClick={() => clearBears()}> Clear Bears</button>
+      <div className="flex flex-col gap-2">
+        <button onClick={() => doNoting()}> Nothing</button>
+        <button onClick={() => addBear({ name: "Bear", color: "black" })}> Add Bear</button>
+        <button onClick={() => clearBears()}> Clear Bears</button>
+      </div>
 
       <code>
         <pre>{JSON.stringify(bears, null, 2)}</pre>
