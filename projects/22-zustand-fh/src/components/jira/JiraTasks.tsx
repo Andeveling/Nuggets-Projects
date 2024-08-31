@@ -1,11 +1,10 @@
 import { IoCheckmarkCircleOutline } from "react-icons/io5";
 import { TaskStatus } from "../../interfaces";
 import { JiraSingleTask } from "./JiraSingleTask";
-import { useTasksStore } from "../../stores";
 import classnames from "classnames";
-import { useState } from "react";
 import { Task } from "../../interfaces";
 import AddNewTaskModal from "./AddNewTaskModal";
+import { useTaskHook } from "../../hooks/useTaskHook";
 
 interface Props {
   title: string;
@@ -14,24 +13,13 @@ interface Props {
 }
 
 export const JiraTasks = ({ title, value, tasks }: Props) => {
-  const isDragging = useTasksStore((state) => !!state.draggingTaskId);
-  const [onDragOver, setOnDragOver] = useState(false);
-  const onTaskDrop = useTasksStore((state) => state.onTaskDrop);
-
-  const handleDragOver = (e: React.DragEvent<HTMLDivElement>) => {
-    e.preventDefault();
-    setOnDragOver(true);
-  };
-
-  const handleDragLeave = (e: React.DragEvent<HTMLDivElement>) => {
-    e.preventDefault();
-    setOnDragOver(false);
-  };
-
-  const handleDrop = (e: React.DragEvent<HTMLDivElement>) => {
-    e.preventDefault();
-    onTaskDrop(value);
-  };
+  const {
+    isDragging,
+    onDragOver,
+    handleDragOver,
+    handleDragLeave,
+    handleDrop,
+  } = useTaskHook({ status: value });
   return (
     <div
       onDragOver={handleDragOver}

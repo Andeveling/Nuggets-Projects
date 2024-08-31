@@ -40,7 +40,7 @@ export default function AddNewTaskModal({ value }: { value: TaskStatus }) {
 
   return (
     <>
-      <button className="btn btn-primary rounded-full" onClick={openModal}>
+      <button className="btn btn-primary btn-circle" onClick={openModal}>
         <span className="sr-only">Anadir una tarea neeva</span>
         <IoAddOutline />
       </button>
