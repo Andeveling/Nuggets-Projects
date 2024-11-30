@@ -1,4 +1,4 @@
-import { create, StateCreator } from "zustand";
+import { create, type StateCreator } from "zustand";
 import type { Task, TaskStatus } from "../../interfaces";
 import { devtools } from "zustand/middleware";
 import { persist } from "zustand/middleware";

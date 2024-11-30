@@ -20,7 +20,6 @@ export class AuthService {
       return res.data;
     } catch (error) {
       if (error instanceof AxiosError) {
-        console.log(error.response?.data);
         throw new Error(error.response?.data.message);
       } else {
         throw new Error("Something went wrong");

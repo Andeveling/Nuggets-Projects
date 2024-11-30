@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES6", // Usa la versión de ECMAScript que prefieras, ES6 es una buena opción.
+    "module": "CommonJS", // Usamos CommonJS para los módulos de Node.js.
+    "moduleResolution": "node", // Asegura que las importaciones se resuelvan correctamente como en Node.js.
+    "jsx": "react", // Si estás trabajando con React, de lo contrario, puedes omitir esta línea.
+    "esModuleInterop": true, // Permite importar módulos de manera más flexible (como `import express from 'express'`).
+    "strict": true, // Activa las comprobaciones estrictas de TypeScript, incluso si no usas TypeScript.
+    "skipLibCheck": true // Omite la comprobación de tipos en las bibliotecas (a veces útil en proyectos grandes).
+  },
+  "include": [
+    "src/**/*.js", // Incluye todos los archivos .js dentro de la carpeta src.
+    "node_modules/socket.io-client/**/*.js", // Incluye los archivos de cliente de Socket.IO si los usas en el frontend.
+    "node_modules/express/**/*.js" // Incluye los archivos de Express.
+, "index.js"  ],
+  "exclude": [
+    "node_modules" // Excluye la carpeta node_modules para evitar que se indexen innecesariamente.
+  ]
+}

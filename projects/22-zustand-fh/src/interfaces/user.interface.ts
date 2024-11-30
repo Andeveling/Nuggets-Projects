@@ -6,4 +6,4 @@ export interface User {
   roles: string[];
 }
 
-export type AuthStatus = "autorice" | "unautorized" | "pending";
+export type AuthStatus = "autorice" | "unauthorized" | "pending";

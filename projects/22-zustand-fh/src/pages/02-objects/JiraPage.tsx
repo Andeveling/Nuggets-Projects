@@ -5,9 +5,7 @@ export const JiraPage = () => {
   const todoTasks = useTasksStore((state) => state.getTaskByStatus("todo"));
   const doingTasks = useTasksStore((state) => state.getTaskByStatus("doing"));
   const doneTasks = useTasksStore((state) => state.getTaskByStatus("done"));
-  console.log(todoTasks);
-  console.log(doingTasks);
-  console.log(doneTasks);
+
   return (
     <>
       <h1>Tareas</h1>
