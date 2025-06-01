@@ -1,13 +1,10 @@
 @import "tailwindcss";
-
-
 html, body {
   background-color: #000000;
+  /* Si deseas texto blanco global, descomenta la siguiente línea */
   /* color: white; */
   font-family: 'Open Sans', sans-serif;
-  
 }
-
 
 h1 {
   @apply text-3xl font-bold mb-4;
@@ -29,9 +26,8 @@ em {
   @apply italic text-pink-500;
 }
 
-
 .btn-primary {
-  @apply bg-indigo-500 text-white font-bold py-2 px-4 rounded-xl hover:bg-indigo-700 transition-all duration-200 ease-in-out;
+  @apply bg-indigo-500 text-white font-bold py-2 px-4 rounded-xl hover:bg-indigo-700 transition duration-200 ease-in-out;
 }
 
 .btn-primary:disabled {
@@ -39,17 +35,17 @@ em {
 }
 
 .chat-container {
-  @apply flex flex-col flex-auto flex-shrink-0 rounded-2xl bg-white opacity-5 h-full p-4;
+  @apply flex flex-col flex-auto flex-shrink-0 rounded-2xl bg-white/80 h-full p-4;
 }
 
 .chat-messages {
-  @apply flex flex-col h-full overflow-x-auto mb-4 overflow-scroll;
+  @apply flex flex-col h-full overflow-x-auto overflow-scroll mb-4;
 }
 
-
 /* Animations */
-
-.fade-in { animation: fadeIn .3s; }
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
 
 @keyframes fadeIn {
   0% { opacity: 0; }

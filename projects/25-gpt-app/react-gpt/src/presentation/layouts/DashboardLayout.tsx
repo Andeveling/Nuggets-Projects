@@ -13,7 +13,6 @@ export const DashboardLayout = () => {
 
         <div className='border-gray-700 border my-3' />
 
-        {/* Opciones del menú */}
         <ul className='flex flex-col mt-3 gap-1'>
           {menuRoutes.map((route) => (
             <li key={route.to} className='list-none'>
@@ -23,9 +22,9 @@ export const DashboardLayout = () => {
         </ul>
       </nav>
 
-      <section className='mx-3 sm:mx-20 flex flex-col w-full h-[calc(100vh-50px)]  bg-white bg-opacity-10 p-5 rounded-3xl'>
-        <div className='flex flex-row h-full'>
-          <div className='flex flex-col flex-auto h-full p-1'>
+      <section className='mx-3 sm:mx-20 flex flex-col w-full h-[calc(100vh-50px)]  bg-white  p-5 rounded-3xl'>
+        <div className='flex flex-row h-full w-full'>
+          <div className='flex flex-col flex-auto h-full p-1 w-full'>
             <Outlet />
           </div>
         </div>
