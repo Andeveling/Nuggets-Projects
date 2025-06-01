@@ -8,7 +8,7 @@ export const OrthographyPage = () => {
         <div className='grid grid-cols-12 gap-y-2'>
           <GPTMessage message='Hola, puedes escribirme algo?' />
           <MyMessage message='Hola, puedes escribirme algo?' />
-          <TypingLoader />
+          <TypingLoader className="fade-in" />
         </div>
       </div>
     </div>
