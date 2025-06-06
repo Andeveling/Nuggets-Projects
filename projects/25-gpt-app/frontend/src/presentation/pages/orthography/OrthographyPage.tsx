@@ -2,6 +2,7 @@ import { TypingLoader } from "@/presentation/components"
 import { GPTMessage } from "@/presentation/components/chat-bubbles/GPTMessage"
 import { MyMessage } from "@/presentation/components/chat-bubbles/MyMessage"
 import { TextMessageBox } from "@/presentation/components/chat-input-boxes/TextMessageBox"
+import { TextMessageBoxSelect } from "@/presentation/components/chat-input-boxes/TextMessageBoxSelect"
 import { useState } from "react"
 
 interface Message {
@@ -39,6 +40,17 @@ export const OrthographyPage = () => {
         </div>
       </div>
       <TextMessageBox onSendMessage={handlePostMessage} placeholder='Escribe lo que quieras.' disabledCorrections />
+      <TextMessageBoxSelect
+        onSendMessage={handlePostMessage}
+        placeholder='Escribe lo que quieras.'
+        disabledCorrections
+        options={[
+          {
+            id: "1",
+            text: "Correcciones",
+          },
+        ]}
+      />
     </div>
   )
 }

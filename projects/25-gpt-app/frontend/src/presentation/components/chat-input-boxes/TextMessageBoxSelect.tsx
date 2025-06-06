@@ -5,10 +5,17 @@ interface TextMessageBoxProps {
   onSendMessage: (message: string) => void
   placeholder?: string
   disabledCorrections?: boolean
+  options: Option[]
 }
 
-export const TextMessageBoxSelect: React.FC<TextMessageBoxProps> = ({ onSendMessage, placeholder = "Escribe tu mensaje", disabledCorrections = false }) => {
+interface Option {
+  id: string
+  text: string
+}
+
+export const TextMessageBoxSelect: React.FC<TextMessageBoxProps> = ({ onSendMessage, placeholder = "Escribe tu mensaje", disabledCorrections = false, options }) => {
   const [message, setMessage] = useState<string>("")
+  const [selectedOption, setSelectedOption] = useState<Option>(options[0])
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
@@ -34,6 +41,20 @@ export const TextMessageBoxSelect: React.FC<TextMessageBoxProps> = ({ onSendMess
         onChange={(e) => setMessage(e.target.value)}
         value={message}
       />
+      <select
+        value={selectedOption.id}
+        onChange={(e) => setSelectedOption(options.find((option) => option.id === e.target.value)!)}
+        name='select'
+        className='w-1/5 ml-3 h-11 px-3 border border-gray-300 rounded-lg text-sm placeholder-gray-400 focus:outline-none focus:border-indigo-600 focus:ring focus:ring-indigo-100 transition-colors duration-200'>
+        <option value='' disabled>
+          Selecciona una opción
+        </option>
+        {options.map((option) => (
+          <option key={option.id} value={option.id}>
+            {option.text}
+          </option>
+        ))}
+      </select>
       <button
         type='submit'
         aria-label='Enviar mensaje'
